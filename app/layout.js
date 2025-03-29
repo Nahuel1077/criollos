@@ -150,13 +150,13 @@ export default function RootLayout({ children }) {
             <h6 className="text-[x-large]">Resources</h6>
             <ul className="flex flex-col items-center sm:block">
               <li>
-                <Link href="/not-developed" className="group relative">Support<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link>
+                <Link href="emailto:nahuh08gmail.com" className="group relative">Support<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link>
               </li>
               <li>
                 <Link href="/about-us" className="group relative">About us<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link>
               </li>
               <li>
-                <Link href="/not-developed" className="group relative">Procedures<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link>
+                <Link href="/procedures" className="group relative">Procedures<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link>
               </li>
             </ul>
           </div>

@@ -73,13 +73,13 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 lg:gap-[4rem]">
             <h1 className={`${philosopher.className} italic sm:text-3xl md:text-5xl z-10 w-300px lg:w-[900px] text-center`}>We will make your business grow digitally and reach global clients</h1>
             <div className="flex flex-row gap-4">
-              <button className="bg-white text-black rounded-[8px] w-[120px] h-[35px] border-black hover:brightness-50 hidden sm:block">See services</button>
+              <button className="bg-white text-black rounded-[8px] w-[120px] h-[35px] border-black hover:brightness-50 hidden sm:block"><a href="#solutions">See services</a></button>
               <button className="bg-black text-white rounded-[8px] w-[120px] h-[35px] border-white hover:brightness-50"><a href="#contact">Contact us</a></button>
             </div>
           </div>
         </div>
       </section>
-      <section id="solutions" className="flex flex-col justify-center items-center gap-8">
+      <section id="solutions" className="flex flex-col justify-center items-center gap-8 sm:p-[2rem_0rem]">
         <div className="flex flex-col md:p-8 w-full">
           <div className="items-start flex flex-col">
             <h3 className={`${cormorant.className} text-4xl text-[#f0deb8]`}>Digital Solutions</h3>
@@ -385,7 +385,7 @@ export default function Home() {
               <li>5 pages</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              Buy now
+              <a href="/not-developed">Buy now</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-2xl hover:scale-105 transition-all duration-75 ease-in-out">
@@ -399,7 +399,7 @@ export default function Home() {
               <li>7 pages</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              Buy now
+              <a href="/not-developed">Buy now</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-2xl hover:scale-105 transition-all duration-75 ease-in-out">
@@ -413,7 +413,7 @@ export default function Home() {
               <li>Unlimited pages</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              Buy now
+              <a href="/not-developed">Buy now</a>
             </button>
           </div>
         </div>
