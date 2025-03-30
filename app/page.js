@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import { Philosopher, Cormorant_Upright, Cormorant, Montserrat } from "next/font/google";
+import { Philosopher, Cormorant_Upright, Cormorant, Montserrat, Monsieur_La_Doulaise } from "next/font/google";
 import { useState } from "react";
 import 'animate.css';
 
@@ -85,7 +85,7 @@ export default function Home() {
             <h3 className={`${cormorant.className} text-4xl text-[#f0deb8]`}>Digital Solutions</h3>
             <button onClick={() => setVisibleD(!visibleD)} className={`${cormorant_italic.className} italic border-none bg-transparent text-[#DBA95E]`}>{visibleD ? "See less" : "See more"}</button>
           </div>
-          <div className={`grid grid-cols-1 justify-items-center md:grid-cols-3 gap-20 animate__animated animate__slideInLeft transition-all ease-in-out overflow-hidden ${visibleD ? "animate__animated animate__slideInLeft opacity-100 max-h-max" : "animate__animated animate__slideOutLeft opacity-0 max-h-0"}`}>
+          <div className={`${montserrat.className} grid grid-cols-1 justify-items-center md:grid-cols-3 gap-20 animate__animated animate__slideInLeft transition-all ease-in-out overflow-hidden ${visibleD ? "animate__animated animate__slideInLeft opacity-100 max-h-max" : "animate__animated animate__slideOutLeft opacity-0 max-h-0"}`}>
             <div className="flex flex-col items-center justify-center border rounded-xl w-[250px] h-[300px]">
               <Image
                 src="/web.svg"
@@ -159,7 +159,7 @@ export default function Home() {
             <h3 className={`${cormorant.className} text-4xl text-[#f0deb8]`}>Linguistic Solutions</h3>
             <button onClick={() => setVisibleL(!visibleL)} className={`${cormorant_italic.className} italic border-none bg-transparent text-[#DBA95E]`}>{visibleL ? "See less" : "See more"}</button>
           </div>
-          <div className={`grid grid-cols-1 justify-items-center md:grid-cols-3 gap-20 animate__animated animate__slideInLeft transition-all ease-in-out overflow-hidden ${visibleL ? "animate__animated animate__slideInLeft opacity-100 max-h-max" : "animate__animated animate__slideOutLeft opacity-0 max-h-0"}`}>
+          <div className={`${montserrat.className} grid grid-cols-1 justify-items-center md:grid-cols-3 gap-20 animate__animated animate__slideInLeft transition-all ease-in-out overflow-hidden ${visibleL ? "animate__animated animate__slideInLeft opacity-100 max-h-max" : "animate__animated animate__slideOutLeft opacity-0 max-h-0"}`}>
             <div className="flex flex-col items-center justify-center border rounded-xl w-[250px] h-[300px]">
               <Image
                 src="/translation.svg"
@@ -168,7 +168,7 @@ export default function Home() {
                 alt="logo"
                 className="object-cover invert p-4"
               />
-              <h3>Professional Certified Translation</h3>
+              <h3 className="text-center">Professional Certified Translation</h3>
               <h6 className="p-4">With excellent professionals, we provide translations on a variety of fields: legal, technical, marketing, education, financial, among others.</h6>
             </div>
             <div className="flex flex-col items-center justify-center border rounded-xl w-[250px] h-[300px]">
@@ -191,7 +191,7 @@ export default function Home() {
                 className="invert p-4"
               />
               <h3>Subtitling</h3>
-              <h6 className="p-4">High-quality subtitles in English and Spanish. We ensure accuracy, synchronization, and readability for a seamless viewing experience. Videos, movies, ads, content creators.</h6>
+              <h6 className="p-4">High-quality subtitles in English and Spanish. We ensure synchronization, and readability for a seamless viewing experience.</h6>
             </div>
             <div className="flex flex-col items-center justify-center border rounded-xl w-[250px] h-[300px]">
               <Image
@@ -234,8 +234,8 @@ export default function Home() {
         <div className="flex items-center">
           <h2 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>Why choosing us?</h2>
         </div>
-        <div className="flex flex-col items-center gap-4"> {/* dropdown container */}
-          <div className={`gap-24 flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_20rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] lg:p-[0rem_2rem] p-[0rem_1rem] ${dropdown1 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} /* "" */>
+        <div className={"flex flex-col items-center gap-4"}> {/* dropdown container */}
+          <div className={`gap-24 flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_17rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_1rem] ${dropdown1 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} /* "" */>
             <div className="flex flex-col items-start gap-4 lg:gap-0">
               <h6 className="font-bold">Experts in Linguistic and Development Solutions</h6>
               <h6 className={`${dropdown1 ? "block h-auto lg:h-[25px] transition-all duration-75 ease-in-out animate__animated animate__fadeInDown":"hidden"}`}>More than 5 years of experience working in a growing environment.</h6>
@@ -252,7 +252,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className={`gap-24 flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_20rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_2rem] ${dropdown2 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
+          <div className={`gap-24 flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_17rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_1rem] ${dropdown2 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
             <div className="flex flex-col items-start">
               <h6 className="font-bold">100% customized solutions</h6>
               <h6 className={`${dropdown2 ? "block h-[25px] transition-all duration-75 ease-in-out animate__animated animate__fadeInDown":"hidden"}`}>Our solutions will adapt to your necessities.</h6>
@@ -269,7 +269,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_20rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_2rem] ${dropdown3 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
+          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_17rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_1rem] ${dropdown3 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
             <div className="flex flex-col items-start">
               <h6 className="font-bold">Digital and Linguistic solutions all in one place</h6>
               <h6 className={`${dropdown3 ? "block h-[25px] transition-all duration-75 ease-in-out animate__animated animate__fadeInDown":"hidden"}`}>We offer a unique combination of digital and linguistic solutions to help your business thrive.</h6>
@@ -286,7 +286,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_20rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_2rem] ${dropdown4 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
+          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_17rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_1rem] ${dropdown4 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
             <div className="flex flex-col items-start">
               <h6 className="font-bold">Detail-oriented</h6>
               <h6 className={`${dropdown4 ? "block h-[25px] transition-all duration-75 ease-in-out animate__animated animate__fadeInDown":"hidden"}`}>Details are very important to us, they make a big difference.</h6>
@@ -303,7 +303,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_20rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_2rem] ${dropdown5 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
+          <div className={`flex flex-row items-center justify-between bg-white bg-[url(/firulete.svg)] bg-contain sm:bg-[center_right_17rem] bg-[center_right_28rem] hover:bg-right duration-[1s] ease-in-out bg-no-repeat bg-blend-normal text-black border-gray-600 rounded-xl w-[95vw] lg:h-[80px] lg:w-[800px] p-[0rem_1rem] ${dropdown5 ? "h-[180px] lg:h-[120px]":"h-[80px] "}`} >
             <div className="flex flex-col items-start">
               <h6 className="font-bold">Efficiency & Innovation Combined</h6>
               <h6 className={`${dropdown5 ? "block h-[25px] transition-all duration-75 ease-in-out animate__animated animate__fadeInDown":"hidden"}`}>We provide creative solutions focused on efficiency, delivering outstanding results.</h6>
@@ -429,19 +429,19 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-6 content-center flex-wrap items-start">
                 <label htmlFor="service">Service</label>
-                <select defaultValue={""} id="service" className="border-2 border-gray-200 rounded-md w-full md:w-[70%] h-[40px]">
-                  <option defaultValue="1">Choose...</option>
+                <select defaultValue={""} id="service" name="service" className="border-2 border-gray-200 rounded-md w-full md:w-[70%] h-[40px]">
+                  <option value="">Choose...</option>
                   <option value="1">Development</option>
                   <option value="2">Linguistic</option>
                 </select>
               </div>
               <div className="flex flex-col gap-6 content-center flex-wrap items-start">
                 <label htmlFor="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="E-mail" className="border-2 border-gray-200 rounded-md w-full md:w-[70%] max-h-[40px]"></input>
+                <input type="email" id="email" name="email" required placeholder="E-mail" className="border-2 border-gray-200 rounded-md w-full md:w-[70%] max-h-[40px]"></input>
               </div>
               <div className="flex flex-col gap-6 content-center flex-wrap items-start">
                 <label htmlFor="message">Message</label>
-                <textarea id="message" placeholder="Tell us about your project..." className="resize-none border-2 border-gray-200 rounded-md w-full md:w-[70%] h-[80px]"></textarea>
+                <textarea name="message" id="message" placeholder="Tell us about your project..." className="resize-none border-2 border-gray-200 rounded-md w-full md:w-[70%] h-[80px]"></textarea>
               </div>
               <button id="submit" type="submit" className="border-none border-gray-200 rounded-lg w-full md:w-[70%] h-[40px] bg-black text-white hover:bg-[#232222] shadow-[4px_3px_8px_black] self-center">Submit</button>
             </div>

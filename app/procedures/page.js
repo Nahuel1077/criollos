@@ -26,7 +26,7 @@ export default function Procedures(){
                 height={150}
                 width={150}
                 alt="idea"
-                className="block xl:absolute self-center xl:self-end invert hover:bg-[#005fed] hover:shadow-[0px_-14px_25px_45px_#005fed] border-none rounded-[200px] duration-50"
+                className="block xl:absolute self-center xl:self-end invert active:bg-[#005fed] active:shadow-[0px_-14px_25px_45px_#005fed] hover:bg-[#005fed] hover:shadow-[0px_-14px_25px_45px_#005fed] border-none rounded-[200px] duration-50"
                 />
                 <span className="w-[80%] h-[1px] bg-[#ebc26b] self-center sm:hidden"></span>
             </div>
@@ -42,7 +42,7 @@ export default function Procedures(){
                 height={150}
                 width={150}
                 alt="idea"
-                className="block xl:absolute self-center xl:self-start border-none duration-[3s] hover:rotate-[370deg] ease-in-out"
+                className="block xl:absolute self-center xl:self-start border-none duration-[3s] hover:rotate-[370deg] active:rotate-[370deg] ease-in-out"
                 />
                 <span className="w-[80%] h-[1px] bg-[#ebc26b] self-center sm:hidden"></span>
             </div>
@@ -58,7 +58,7 @@ export default function Procedures(){
                 height={150}
                 width={150}
                 alt="idea"
-                className="block xl:absolute self-center xl:self-end border-none duration-[3s] rotate-[-45deg] hover:transform-[matrix(0.41,-0.41,0.41,0.41,-50,-200)] ease-in-out"
+                className="block xl:absolute self-center xl:self-end border-none duration-[3s] rotate-[-45deg] hover:transform-[matrix(0.41,-0.41,0.41,0.41,-50,-200)] active:transform-[matrix(0.41,-0.41,0.41,0.41,-50,-200)] ease-in-out"
                 />
                 <span className="w-[80%] h-[1px] bg-[#ebc26b] self-center sm:hidden"></span>
             </div>
