@@ -5,6 +5,8 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import 'animate.css';
+import Head from 'next/head';
+import { usePathname } from "next/navigation";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -17,7 +19,17 @@ const cormorant = Cormorant_Upright({
 })
 
 export default function RootLayout({ children }) {
-  
+
+  const [hideLayout, setHideLayout] = useState(false);
+  const pathname = usePathname();
+  useEffect(() => {
+    if (pathname.startsWith("/es")) {
+      setHideLayout(true);
+    } else {
+      setHideLayout(false);
+    }
+  }, [pathname]);
+   
   useEffect(() => {
     document.title = "Criollos | Global Solutions"; 
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -29,7 +41,7 @@ export default function RootLayout({ children }) {
       newMeta.content = "Expand your business around the globe";
       document.head.appendChild(newMeta);
     }
-  })
+  });
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,11 +61,16 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      
+      <Head>
+      <script 
+        src="https://www.paypal.com/sdk/js?client-id=BAALGyhqa-7zCP1tqw87kthVANlJJ5u-t15yzcV4rvpxe3ZEgrMVB6MDYjqUwA1lUCVvnNDLVm2CmEcM8c&components=hosted-buttons&disable-funding=venmo&currency=USD" async>
+      </script>
+      </Head>
       <body
         className={`${cormorant} ${philosopher}antialiased`}
         >
       <script async="" src="/lib/app.js"></script>
+      {!hideLayout && (
         <nav className={`flex flex-row justify-between sm:px-10 text-black h-[30px] sm:h-14 items-center fixed top-0 w-full z-20 ${isScrolled ? "bg-[#000000ad] backdrop-blur-md shadow-lg animate__animated animate__pulse":"bg-transparent"}`}>
           <div>
             <Link href="/">
@@ -68,6 +85,13 @@ export default function RootLayout({ children }) {
           </div>
 
           <ul className={`sm:flex-row sm:gap-4 text-[#f0deb8] flex ${menuOpen ? "flex-col w-full z-30 items-end bg-[#000000ad] backdrop-blur-md h-100vh flex absolute top-0 gap-[2rem] p-[50px_60px] animate__animated animate__fadeInDown" : "sm:flex hidden"}`}>
+            <li><Link href="/es" className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}><Image
+              height={20}
+              width={20}
+              alt="spanish"
+              src="/flag-argentina.svg"
+              className="w-[25px] top-1.5 relative"
+            /></Link></li>
             <li><Link href="/#solutions" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Solutions<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
             <li><Link href="/#reviews" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Pricing<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
             <li><Link href="/#contact" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Contact<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
@@ -83,8 +107,9 @@ export default function RootLayout({ children }) {
             />
           </button>          
 
-        </nav>
+        </nav>)}
         {children}
+        {!hideLayout && (
         <footer className="block sm:grid grid-cols-4 justify-items-center items-start p-[3rem_0rem] text-[#f0deb8]">
           <div className="flex flex-col items-center">
             <Image
@@ -160,7 +185,7 @@ export default function RootLayout({ children }) {
               </li>
             </ul>
           </div>
-        </footer>
+        </footer>)}
       </body>
     </html>
   );
