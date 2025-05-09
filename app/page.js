@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Philosopher, Cormorant_Upright, Cormorant, Montserrat, } from "next/font/google";
 import { useState } from "react";
 import 'animate.css';
+import Link from "next/link";
 
 /* Fonts */
 const philosopher = Philosopher({
@@ -60,6 +61,24 @@ export default function Home() {
       setAnimation("animate__fadeInLeft"); 
       setReview((prevIndex) => (prevIndex === 0 ? reviews.length - 1 : prevIndex - 1));
     }, 50);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const images = [
+      '/images/garufa1.jpg',
+      '/images/garufa2.jpg',
+      '/images/garufa3.jpg',
+      '/images/garufa4.jpg',
+      '/images/notflix1.jpg',
+      '/images/notflix2.jpg',
+      '/images/sumuebles1.jpg',
+      '/images/sumuebles2.jpg',
+      '/images/sumuebles3.jpg',
+      '/images/sumuebles4.jpg'
+
+  ];
+  const toggleOffcanvas = () => {
+      setIsOpen(!isOpen);
   };
 
   return (
@@ -453,7 +472,27 @@ export default function Home() {
             </div>
           </form>
         </div>
-      </section>      
+      </section> 
+      <section id="floater" className="hidden md:block w-[140px] h-[100px] fixed top-[80%] left-[80%] z-50">
+        <a href="#" onClick={(e) => { e.preventDefault(); toggleOffcanvas(); }} className={`${cormorant.className} text-[#f0deb8] text-sm flex flex-col items-center hover:opacity-70`}><Image
+            width={40}
+            height={40}
+            alt="logo"
+            src="/C (1).png"
+            />
+          See some of our projects
+        </a>
+        {isOpen && (
+                <div className="fixed top-0 right-0 w-full bg-white shadow-lg h-full z-[5] p-[120px_40px_40px_40px] overflow-y-auto transition-transform duration-300 transform translate-x-0 flex flex-col">
+                    <button onClick={toggleOffcanvas} className="text-black mb-4 self-end">✖</button>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {images.map((src, index) => (
+                            <Image width={400} height={400} key={index} src={src} alt={`Imagen ${index + 1}`} className="w-[300px] lg:w-full h-[250px] object-scale-down rounded-lg"/>
+                        ))}
+                    </div>
+                </div>
+        )}
+      </section>     
     </div>
   );
 }
