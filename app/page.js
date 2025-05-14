@@ -85,7 +85,7 @@ export default function Home() {
     <div className="gap-12 flex flex-col">
       <section id="title" className="flex flex-col items-center justify-center">
         <div className="relative w-full">
-          <video width="1000" height="1000" autoPlay loop muted className="w-screen sm:w-full object-fill brightness-50">
+          <video width="1000" height="1000" autoPlay loop muted className="w-screen h-screen sm:h-auto sm:w-full object-cover sm:object-fill object-[-85px_0px] sm:object-center brightness-50">
             <source src="/title.mp4" type="video/mp4"/>
             Your browser does not support the video tag.
           </video>

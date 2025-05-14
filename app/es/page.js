@@ -84,7 +84,7 @@ export default function EsHome() {
     <div className="gap-12 flex flex-col">
       <section id="title" className="flex flex-col items-center justify-center">
         <div className="relative w-full">
-          <video width="1000" height="1000" autoPlay loop muted className="w-screen sm:w-full object-fill brightness-50">
+          <video width="1000" height="1000" autoPlay loop muted className="w-screen h-screen sm:h-auto sm:w-full object-cover sm:object-fill object-[-85px_0px] sm:object-center brightness-50">
             <source src="/title.mp4" type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
@@ -403,8 +403,8 @@ export default function EsHome() {
               <li>5 páginas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/VG29HJ44GVDBE" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/RVLEKLQ86PDKW" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/1KGKvGV" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/2sHWkr2" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
@@ -418,8 +418,8 @@ export default function EsHome() {
               <li>7 páginas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/CSSPLEX76FX36" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/3SXUKR5DFM43A" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/17N77Kt" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/2Litxxe" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
@@ -433,8 +433,8 @@ export default function EsHome() {
               <li>Páginas ilimitadas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/4YHFTNLXB485J" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/TQ38LBD28QA24" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/2gdAEox" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/2P2hAhP" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
             </button>
           </div>
         </div>
