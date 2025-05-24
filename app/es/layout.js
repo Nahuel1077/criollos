@@ -84,7 +84,7 @@ import 'animate.css';
                 height={200}
               />
               <div className="flex flex-row gap-8">
-                <Link href="/">
+                <Link href="mailto:general@criollos-solutions.com">
                   <Image
                     className="bg-transparent invert hover:opacity-50 transition-opacity"
                     src="/envelope-solid.svg"
@@ -93,7 +93,7 @@ import 'animate.css';
                     height={30}
                   />
               </Link>
-                <Link href="/">
+                <Link href="https://www.instagram.com/criollossolutions/">
                   <Image
                     className="bg-transparent invert hover:opacity-50 transition-opacity"
                     src="/instagram-brands.svg"

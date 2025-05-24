@@ -403,8 +403,8 @@ export default function EsHome() {
               <li>5 páginas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/1KGKvGV" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://mpago.la/2sHWkr2" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/1KGKvGV" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
+              <a href="https://mpago.la/2sHWkr2" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
@@ -418,8 +418,8 @@ export default function EsHome() {
               <li>7 páginas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/17N77Kt" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://mpago.la/2Litxxe" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/17N77Kt" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
+              <a href="https://mpago.la/2Litxxe" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
             </button>
           </div>
           <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
@@ -433,8 +433,8 @@ export default function EsHome() {
               <li>Páginas ilimitadas</li>
             </ul>
             <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/2gdAEox" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://mpago.la/2P2hAhP" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
+              <a href="https://mpago.la/2gdAEox" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
+              <a href="https://mpago.la/2P2hAhP" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
             </button>
           </div>
         </div>
@@ -445,7 +445,7 @@ export default function EsHome() {
       <section id="contact" className="flex flex-col items-center gap-4"> {/*Contact*/}
         <h1 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>Contacto</h1>
         <div className="w-full md:w-[600px] h-[600px] md:h-[700px] flex flex-col bg-white rounded-xl text-black shadow-[1px_1px_30px_5px]">
-          <form action="https://formsubmit.co/nahuh08@gmail.com" method="POST">
+          <form action="https://formsubmit.co/general@criollos-solutions.com" method="POST">
             <div className="w-full lg:w-[600px] lg:h-[800px] h-100vh flex flex-col gap-[2rem] p-[2rem] md:p-[5rem]">
               <div className="flex flex-col gap-6 content-center flex-wrap items-start">
                 <label htmlFor="name">Nombre</label>

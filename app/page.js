@@ -446,7 +446,7 @@ export default function Home() {
       <section id="contact" className="flex flex-col items-center gap-4"> {/*Contact*/}
         <h1 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>Contact us</h1>
         <div className="w-full md:w-[600px] h-[600px] md:h-[700px] flex flex-col bg-white rounded-xl text-black shadow-[1px_1px_30px_5px]">
-          <form action="https://formsubmit.co/nahuh08@gmail.com" method="POST">
+          <form action="https://formsubmit.co/general@criollos-solutions.com" method="POST">
             <div className="w-full lg:w-[600px] lg:h-[800px] h-100vh flex flex-col gap-[2rem] p-[2rem] md:p-[5rem]">
               <div className="flex flex-col gap-6 content-center flex-wrap items-start">
                 <label htmlFor="name">Name</label>
