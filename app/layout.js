@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
                   height={30}
                 />
             </Link>
-              <Link href="https://www.instagram.com/criollossolutions/">
+              <Link href="https://www.instagram.com/criollos.solutions/">
                 <Image
                   className="bg-transparent invert hover:opacity-50 transition-opacity"
                   src="/instagram-brands.svg"
