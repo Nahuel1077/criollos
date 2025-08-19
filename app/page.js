@@ -28,8 +28,8 @@ const montserrat = Montserrat({
 
 export default function Home() {
 
-  const [visibleD, setVisibleD] = useState(false);
-  const [visibleL, setVisibleL] = useState(false);
+  const [visibleD, setVisibleD] = useState(true);
+  const [visibleL, setVisibleL] = useState(true);
 
   const [dropdown1, setDropdown1] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -387,62 +387,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section id="pricing" className="flex flex-col items-center w-full gap-2">
-        <div className={`${montserrat.className} flex flex-row gap-8`}>
-          <button onClick={() => setPricing("monthly")} className={`w-[75px] h-[25px] border-none rounded-lg hover:bg-gray ${pricing === "monthly" ? "bg-white text-black" : ""}`}>Monthly</button>
-          <button onClick={() => setPricing("yearly")} className={`w-[75px] h-[25px] border-none rounded-lg hover:bg-gray ${pricing === "yearly" ? "bg-white text-black" : ""}`}>Yearly</button>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center lg:w-[80%] gap-8">
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Basic</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "14.99 USD" : "159.99 USD"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}>
-              <li>Web Development</li>
-              <li>1 revision</li>
-              <li>{pricing === "monthly" ? "1 update per month" : "12 updates total"}</li>
-              <li>Landing Pages</li>
-              <li>5 pages</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/VG29HJ44GVDBE" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/RVLEKLQ86PDKW" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
-            </button>
-          </div>
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Intermediate</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "29.99 USD" : "329.99 USD"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}> 
-              <li>Web Development</li>
-              <li>2 revisions</li>
-              <li>{pricing === "monthly" ? "1 update per month" : "12 updates total"}</li>
-              <li>Landing Pages</li>
-              <li>7 pages</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/CSSPLEX76FX36" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/3SXUKR5DFM43A" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
-            </button>
-          </div>
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Pro</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "69.99 USD" : "799.99 USD"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}>
-              <li>Web Development</li>
-              <li>Up to 4 revisions</li>
-              <li>{pricing === "monthly" ? "2 update per month" : "24 updates total"}</li>
-              <li>Landing Pages, E-commerce</li>
-              <li>Unlimited pages</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://www.paypal.com/ncp/payment/4YHFTNLXB485J" className={pricing === "monthly" ? "block" : "hidden"}>Buy now</a>
-              <a href="https://www.paypal.com/ncp/payment/TQ38LBD28QA24" className={pricing === "yearly" ? "block" : "hidden"}>Buy now</a>
-            </button>
-          </div>
-        </div>
-        <div>
-          <h6 className={`${montserrat.className} text-[#f0deb8]`}>*Additional features may vary the total price</h6>
-        </div>
-      </section>
+      
       <section id="contact" className="flex flex-col items-center gap-4"> {/*Contact*/}
         <h1 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>Contact us</h1>
         <div className="w-full md:w-[600px] h-[600px] md:h-[700px] flex flex-col bg-white rounded-xl text-black shadow-[1px_1px_30px_5px]">

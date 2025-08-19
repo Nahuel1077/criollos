@@ -93,7 +93,7 @@ export default function RootLayout({ children }) {
               className="w-[25px] top-1.5 relative"
             /></Link></li>
             <li><Link href="/#solutions" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Solutions<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
-            <li><Link href="/#reviews" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Pricing<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
+            <li><Link href="/#reviews" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Reviews<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
             <li><Link href="/#contact" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Contact<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
           </ul>
 

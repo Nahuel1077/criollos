@@ -27,8 +27,8 @@ const montserrat = Montserrat({
 
 export default function EsHome() {
 
-  const [visibleD, setVisibleD] = useState(false);
-  const [visibleL, setVisibleL] = useState(false);
+  const [visibleD, setVisibleD] = useState(true);
+  const [visibleL, setVisibleL] = useState(true);
 
   const [dropdown1, setDropdown1] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -386,64 +386,8 @@ export default function EsHome() {
           </button>
         </div>
       </section>
-      <section id="pricing" className="flex flex-col items-center w-full gap-2">
-        <div className={`${montserrat.className} flex flex-row gap-8`}>
-          <button onClick={() => setPricing("monthly")} className={`w-[75px] h-[25px] border-none rounded-lg hover:bg-gray ${pricing === "monthly" ? "bg-white text-black" : ""}`}>Mensual</button>
-          <button onClick={() => setPricing("yearly")} className={`w-[75px] h-[25px] border-none rounded-lg hover:bg-gray ${pricing === "yearly" ? "bg-white text-black" : ""}`}>Anual</button>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center lg:w-[80%] gap-8">
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Básico</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "$14.999 ARS" : "$174.999 ARS"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}>
-              <li>Desarrollo Web</li>
-              <li>1 revisión</li>
-              <li>{pricing === "monthly" ? "1 actualización por mes" : "12 actualizaciones en total"}</li>
-              <li>Sitios estáticos</li>
-              <li>5 páginas</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/1KGKvGV" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
-              <a href="https://mpago.la/2sHWkr2" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
-            </button>
-          </div>
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Intermedio</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "$29.999 ARS" : "$349.999 ARS"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}> 
-              <li>Desarrollo web</li>
-              <li>2 revisiones</li>
-              <li>{pricing === "monthly" ? "1 actualización por mes" : "12 actualizaciones en total"}</li>
-              <li>Sitios estáticos</li>
-              <li>7 páginas</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/17N77Kt" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
-              <a href="https://mpago.la/2Litxxe" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
-            </button>
-          </div>
-          <div className="w-[300px] h-[300px] lg:h-full flex flex-col items-center text-center lg:gap-[2rem] bg-white rounded-xl text-black shadow-[1px_1px_30px_5px] hover:scale-105 transition-all duration-75 ease-in-out">
-            <h3 className={`${montserrat.className}`}>Pro</h3>
-            <h2 className={`${montserrat.className} text-2xl font-[800]`}>{pricing === "monthly" ? "$79.999 ARS" : "$929.999 ARS"}</h2>
-            <ul className={`${montserrat.className} text-start list-disc m-[2rem] self-start`}>
-              <li>Desarrollo Web</li>
-              <li>Hasta 4 revisiones</li>
-              <li>{pricing === "monthly" ? "2 actualizaciones por mes" : "24 actualizaciones en total"}</li>
-              <li>Sitios estáticos, E-commerce</li>
-              <li>Páginas ilimitadas</li>
-            </ul>
-            <button className=" bg-black text-white w-[170px] h-[50px] rounded-xl m-[1rem] hover:bg-[#232222] shadow-[4px_3px_8px_black]">
-              <a href="https://mpago.la/2gdAEox" className={pricing === "monthly" ? "block" : "hidden"}>Abonar</a>
-              <a href="https://mpago.la/2P2hAhP" className={pricing === "yearly" ? "block" : "hidden"}>Abonar</a>
-            </button>
-          </div>
-        </div>
-        <div>
-          <h6 className={`${montserrat.className} text-[#f0deb8]`}>*Características adicionales podrían modificar el total</h6>
-        </div>
-      </section>
       <section id="contact" className="flex flex-col items-center gap-4"> {/*Contact*/}
-        <h1 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>Contacto</h1>
+        <h1 className={`${philosopher.className} text-center w-full text-4xl text-[#f0deb8]`}>¡Pedí tu presupuesto!</h1>
         <div className="w-full md:w-[600px] h-[600px] md:h-[700px] flex flex-col bg-white rounded-xl text-black shadow-[1px_1px_30px_5px]">
           <form action="https://formsubmit.co/general@criollos-solutions.com" method="POST">
             <div className="w-full lg:w-[600px] lg:h-[800px] h-100vh flex flex-col gap-[2rem] p-[2rem] md:p-[5rem]">

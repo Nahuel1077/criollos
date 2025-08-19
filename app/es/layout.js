@@ -58,7 +58,7 @@ import 'animate.css';
               className="w-[25px] top-1.5 relative"
             /></Link></li>
               <li><Link href="/es/#solutions" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Soluciones<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
-              <li><Link href="/es/#reviews" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Precios<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
+              <li><Link href="/es/#reviews" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Opiniones<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
               <li><Link href="/es/#contact" onClick={() => setMenuOpen(false)} className={`${cormorant.className} ${menuOpen ? "text-lg" : "text-[x-large] "} relative group`}>Contacto<span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#f0deb8] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span></Link></li>
             </ul>
   
