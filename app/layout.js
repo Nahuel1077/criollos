@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
                   height={30}
                 />
             </Link>
-              <Link href="/">
+              <Link href="https://wa.me/541127194665?text=Hola, me contacto desde la web de Criollos Solutions!">
                 <Image
                   className="bg-transparent invert hover:opacity-50 transition-opacity"
                   src="/whatsapp-brands.svg"
