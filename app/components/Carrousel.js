@@ -11,10 +11,13 @@ const carrousel = [
   {id:6, src:"/images/sumuebles2.jpg", title:"SuMuebles"},
   {id:7, src:"/images/sumuebles3.jpg", title:"SuMuebles"},
   {id:8, src:"/images/sumuebles4.jpg", title:"SuMuebles"},
-  {id:9, src:"/images/cdc1.jpg", title:"Corazón de Calamuchita"},
-  {id:10, src:"/images/cdc2.jpg", title:"Corazón de Calamuchita"},
-  {id:11, src:"/images/cdc3.jpg", title:"Corazón de Calamuchita"},
-  {id:12, src:"/images/cdc4.jpg", title:"Corazón de Calamuchita"},
+  {id:9, src:"/images/altosdelagunitas1.jpg", title:"Altos de Lagunitas"},
+  {id:10, src:"/images/altosdelagunitas2.jpg", title:"Altos de Lagunitas"},
+  {id:11, src:"/images/altosdelagunitas3.jpg", title:"Altos de Lagunitas"},
+  {id:12, src:"/images/altosdelagunitas4.jpg", title:"Altos de Lagunitas"},
+  {id:13, src:"/images/altosdelagunitas5.jpg", title:"Altos de Lagunitas"},
+  {id:14, src:"/images/altosdelagunitas6.jpg", title:"Altos de Lagunitas"},
+  {id:15, src:"/images/altosdelagunitas7.jpg", title:"Altos de Lagunitas"},
 ];
 
 export default function Carrousel(){
